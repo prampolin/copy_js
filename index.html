@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Copy with JavaScript</title>
+</head>
+<body>
+	<form action="">
+		<input type="text" name="copy" id="text" placeholder="Type something" required>
+		<button id="copy">Copy</button>
+	</form>
+	<script type="text/javascript">
+		const textInput = document.getElementById('text');
+		const copyButton = document.getElementById('copy');
+
+		copyButton.addEventListener('click', () => {
+			text.select();
+			document.execCommand('copy');
+		});
+	</script>
+</body>
+</html>
